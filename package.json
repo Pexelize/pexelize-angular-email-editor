@@ -1,6 +1,6 @@
 {
   "name": "@pexelize/angular-email-editor",
-  "version": "1.0.3",
+  "version": "1.0.4",
   "description": "Angular email editor component - drag-and-drop email builder for creating responsive email templates and newsletters. Build HTML emails visually with Pexelize.",
   "type": "module",
   "main": "dist/index.js",

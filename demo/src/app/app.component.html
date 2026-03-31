@@ -1,0 +1,52 @@
+<div class="app">
+  <!-- Toolbar -->
+  <div class="toolbar">
+    <div class="toolbar-left">
+      <span class="title">Pexelize Angular Editor</span>
+      <span [class]="'badge ' + (isReady ? 'badge-ready' : 'badge-loading')">
+        {{ isReady ? "Ready" : "Loading..." }}
+      </span>
+    </div>
+    <div class="toolbar-actions">
+      <button class="btn" [disabled]="!isReady" (click)="handleNewBlank()">
+        New Blank
+      </button>
+      <button class="btn" [disabled]="!isReady" (click)="handleSaveDesign()">
+        Save Design
+      </button>
+      <button
+        class="btn btn-primary"
+        [disabled]="!isReady"
+        (click)="handleExportHtml()"
+      >
+        Export HTML
+      </button>
+      <div class="separator"></div>
+      <button class="btn" [disabled]="!isReady" (click)="handleUndo()">
+        Undo
+      </button>
+      <button class="btn" [disabled]="!isReady" (click)="handleRedo()">
+        Redo
+      </button>
+      <button class="btn" [disabled]="!isReady" (click)="handlePreview()">
+        Preview
+      </button>
+    </div>
+  </div>
+
+  <!-- Editor -->
+  <div class="editor-container">
+    <pexelize-editor
+      #editor
+      editorKey="EDITOR_KEY_HERE"
+      editorMode="email"
+      designMode="edit"
+      height="100%"
+      minHeight="600px"
+      [options]="editorOptions"
+      (ready)="onReady()"
+      (change)="onChange($event)"
+      (error)="onError($event)"
+    ></pexelize-editor>
+  </div>
+</div>

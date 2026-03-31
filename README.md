@@ -6,7 +6,7 @@
 
 <p align="center">
   <a href="https://www.npmjs.com/package/@pexelize/angular-email-editor"><img src="https://img.shields.io/npm/v/@pexelize/angular-email-editor.svg" alt="npm version" /></a>
-  <a href="https://github.com/Pexelize/pexelize-angular-email-editor/blob/main/LICENSE"><img src="https://img.shields.io/npm/l/@pexelize/angular-email-editor.svg" alt="license" /></a>
+  <a href="https://github.com/Pexelize/pexelize-angular-email-editor/blob/main/LICENSE"><img src="https://img.shields.io/badge/license-MIT-blue.svg" alt="license" /></a>
 </p>
 
 # @pexelize/angular-email-editor
